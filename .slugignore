@@ -1,0 +1,10 @@
+docs
+ssl
+svn
+tm-data
+.editorconfig
+.gitignore
+.idea
+.nodemonignore
+circle.yml
+README.md

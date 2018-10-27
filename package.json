@@ -1,0 +1,24 @@
+{
+  "name": "node-midi-event-mapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Veitch",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "6.1.0",
+    "easymidi": "1.0.1",
+    "lodash": "4.17.11",
+    "midi": "0.9.5",
+    "request": "2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "4.13.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0"
+  }
+}
