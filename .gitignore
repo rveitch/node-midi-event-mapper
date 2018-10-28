@@ -138,3 +138,5 @@ jsconfig.json
 
 #Istanbul
 .nyc_output
+
+\.env
