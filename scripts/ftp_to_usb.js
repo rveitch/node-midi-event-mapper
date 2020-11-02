@@ -1,18 +1,18 @@
-const dotenv = require('dotenv').config();
-
 // Libs
 const _ = require('lodash');
 const easymidi = require('easymidi');
 
+const Config = require('../lib/config');
 const MidiCore = require('../lib/services/midi-core');
 
 /* ****************************** APP ***************************** */
-const defaultDeviceName = MidiCore.getDefaultDeviceName();
-console.info(`Creating Input for Default Device: ${defaultDeviceName}`);
+const defaultDeviceName = MidiCore.getDefaultInputDeviceName();
+console.info(`\nCreating Input for Default Device: ${defaultDeviceName}`);
 const midiIn = new easymidi.Input('Fishman TriplePlay TP Guitar');
 const midiOut = new easymidi.Output('USB MIDI Interface');
-const midiOutChannel = _.toInteger(process.env.MIDI_OUT_CHANNEL || 0);
+const midiOutChannel = _.toInteger(Config.get('MIDI_OUT_CHANNEL') || 0);
 console.log('Midi Out Channel:', midiOutChannel);
+
 let previousProgramNumber = 0;
 
 resetBanks();
