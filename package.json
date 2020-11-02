@@ -4,23 +4,24 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start app.js --no-daemon",
+    "start": "pm2 start ./scripts/pisound-modep-event-mapper.js --no-daemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Veitch",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "6.1.0",
-    "easymidi": "github:rveitch/node-easymidi",
-    "lodash": "4.17.11",
-    "midi": "github:rveitch/node-midi",
-    "pm2": "3.2.2",
-    "request": "2.88.0",
-    "request-promise-native": "1.0.5"
+    "dotenv": "^8.2.0",
+    "easymidi": "^2.0.1",
+    "lodash": "^4.17.20",
+    "midi": "^1.0.0",
+    "pm2": "^4.5.0",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.8"
   },
   "devDependencies": {
-    "eslint": "4.13.0",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.8.0"
+    "eslint": "7.1.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0"
   }
 }

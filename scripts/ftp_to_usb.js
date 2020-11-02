@@ -4,7 +4,7 @@ const dotenv = require('dotenv').config();
 const _ = require('lodash');
 const easymidi = require('easymidi');
 
-const MidiCore = require('./lib/services/midi-core');
+const MidiCore = require('../lib/services/midi-core');
 
 /* ****************************** APP ***************************** */
 const defaultDeviceName = MidiCore.getDefaultDeviceName();

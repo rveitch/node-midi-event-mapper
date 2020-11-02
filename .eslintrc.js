@@ -2,6 +2,8 @@ module.exports = {
   root: true,
 
   extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
     'airbnb-base',
   ],
 
@@ -27,18 +29,19 @@ module.exports = {
     'no-use-before-define': [
       'error',
       {
-        'functions': false,
+        functions: false,
       },
     ],
 
     'no-unused-vars': [
       'error',
       {
-        'args': 'none'
+        args: 'none',
       },
     ],
 
     'prefer-destructuring': [0],
     'consistent-return': [1],
+    'arrow-body-style': [0],
   },
 };
